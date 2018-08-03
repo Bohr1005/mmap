@@ -1,2 +1,2 @@
 # mmap
-mmap 文件读写
+mmap open/write file
