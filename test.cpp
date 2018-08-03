@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "mmap.h"
-#define FILENAME(x) "file_"##x
 
 int main(int argc, char** argv)
 {
@@ -31,8 +30,8 @@ int main(int argc, char** argv)
 	}
 
 	//mmap read file
-	CMMAP* pRead = new CMMAP("test.txt",READ);
-	printf("%.1024s\n",pRead->readData());
+	CMMAP* pRead = new CMMAP("test1.txt",READ);
+	printf("%.100s\n",pRead->readData());
 
 	delete pRead;
 	delete pWrite;
